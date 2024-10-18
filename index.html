@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/robot.png" type="image/x-icon">
+    <title>Jogo do Número Secreto</title>
+</head>
+<body>
+    <header> <h1>Jogo do Número Secreto</h1></header>
+   
+   
+    
+   
+    <div class="container"> 
+            
+    
+            <div class="escolhaNumero">
+                <input type="number" id="numeroMaximo" placeholder="Digite o número máximo">
+                <button id="botaoIniciar" onclick="iniciarJogo()">Iniciar Jogo</button>
+                
+            </div>
+            <div class="chuteNumero">
+                <input type="number" id="chute" placeholder="Digite seu chute">
+                <button id="botaoVerificar" onclick="verificarChute()" disabled>Chutar</button>
+            </div>
+            
+            <div class="botaoReiniciar"><button onclick="reiniciarJogo()">Reiniciar</button></div>
+    </div>
+    
+    <div class="imagem">
+        <img id="imagem" src="img/robot.png" alt="">
+        <div class="mens">
+          
+          <p class="mensagem2" id="mensagem2"></p>
+          <p class="mensagem" id="mensagem"></p>
+          <p class="mensagem3" id="mensagem3"></p>
+        </div>
+    </div>
+    
+
+
+</body>
+
+<footer id="footer">
+    <p>Site criado por <a href="https://caiodiom.github.io/portfolio-caio/
+        "target="blank">Caio Braga 🔗</a> para  <a href="https://github.com/caiodiom"target="blank">Mesus Projetos 🔗</a>.
+    </p>
+</footer>
+
+<script src="app.js"></script>
+</html>
